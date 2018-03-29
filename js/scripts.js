@@ -1,5 +1,31 @@
 //
 // //Back-End :
+.function(number){
+  var numberPingPong = [];
+  for(var index = 0; index <= number; index += 1){
+    if (index % 15 === 0) {
+      numberPingPong.push("PingPong");
+    } else if ( index % 5 === 0) {
+      numberPingPong.push("Pong");
+    } else if(index %3 === 0 ) {
+      numberPingPong.push("ping");
+    } else {
+      return number;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 // var three  = function() {
 // var user3 = parseInt(prompt("Give me another !"));
 //   if (user3 % 3 ===0){
