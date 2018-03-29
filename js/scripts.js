@@ -14,7 +14,7 @@ $(document).ready(function() {
   $('#b').click(function(event) {
     var userNumber = parseInt($('input#pan').val());
     event.preventDefault();
-    
+    $('ul.pet').empty();
     for (var startPoint = 1; startPoint <= userNumber; startPoint += 1) {
       $('ul.pet').append('<li>' + pingpong(startPoint) + '</li>');
     }
